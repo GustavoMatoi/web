@@ -1,0 +1,94 @@
+{
+  "envios": [
+    {
+      "plataforma": "web",
+      "data_recebimento": "2025-08-04T14:32:00",
+      "nome_arquivo": "relatorio_financeiro.pdf",
+      "tipo_arquivo": "pdf"
+    },
+    {
+      "plataforma": "mobile",
+      "data_recebimento": "2025-08-03T10:15:22",
+      "nome_arquivo": "foto_perfil.jpg",
+      "tipo_arquivo": "imagem"
+    },
+    {
+      "plataforma": "desktop",
+      "data_recebimento": "2025-08-02T18:47:55",
+      "nome_arquivo": "backup.zip",
+      "tipo_arquivo": "compactado"
+    },
+    {
+      "plataforma": "web",
+      "data_recebimento": "2025-08-01T09:00:00",
+      "nome_arquivo": "tcc_final.docx",
+      "tipo_arquivo": "documento"
+    },
+    {
+      "plataforma": "mobile",
+      "data_recebimento": "2025-07-31T16:20:10",
+      "nome_arquivo": "video_apresentacao.mp4",
+      "tipo_arquivo": "video"
+    },
+    {
+      "plataforma": "desktop",
+      "data_recebimento": "2025-07-30T11:45:33",
+      "nome_arquivo": "planilha_clientes.xlsx",
+      "tipo_arquivo": "planilha"
+    },
+    {
+      "plataforma": "web",
+      "data_recebimento": "2025-07-29T08:12:47",
+      "nome_arquivo": "contrato_assinado.pdf",
+      "tipo_arquivo": "pdf"
+    },
+    {
+      "plataforma": "mobile",
+      "data_recebimento": "2025-07-28T19:30:15",
+      "nome_arquivo": "audio_entrevista.mp3",
+      "tipo_arquivo": "audio"
+    },
+    {
+      "plataforma": "desktop",
+      "data_recebimento": "2025-07-27T14:05:29",
+      "nome_arquivo": "manual_usuario.pdf",
+      "tipo_arquivo": "pdf"
+    },
+    {
+      "plataforma": "web",
+      "data_recebimento": "2025-07-26T10:50:18",
+      "nome_arquivo": "apresentacao.pptx",
+      "tipo_arquivo": "apresentacao"
+    },
+    {
+      "plataforma": "mobile",
+      "data_recebimento": "2025-07-25T22:15:42",
+      "nome_arquivo": "print_tela.png",
+      "tipo_arquivo": "imagem"
+    },
+    {
+      "plataforma": "desktop",
+      "data_recebimento": "2025-07-24T13:25:37",
+      "nome_arquivo": "dados_exportados.csv",
+      "tipo_arquivo": "dados"
+    },
+    {
+      "plataforma": "web",
+      "data_recebimento": "2025-07-23T09:40:55",
+      "nome_arquivo": "relatorio_mensal.pdf",
+      "tipo_arquivo": "pdf"
+    },
+    {
+      "plataforma": "mobile",
+      "data_recebimento": "2025-07-22T17:10:23",
+      "nome_arquivo": "logo_empresa.svg",
+      "tipo_arquivo": "imagem"
+    },
+    {
+      "plataforma": "desktop",
+      "data_recebimento": "2025-07-21T12:35:44",
+      "nome_arquivo": "projeto_final.rar",
+      "tipo_arquivo": "compactado"
+    }
+  ]
+}
