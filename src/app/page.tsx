@@ -1,9 +1,23 @@
-import Image from "next/image";
-import HandDetection from "../../components/clientComponents/HandDetection";
+"use client";
+import React from "react";
+import LoginForm, { FormData } from "../../components/clientComponents/LoginForm";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+function App(){
+  const handleFormSubmit = (data: FormData) => {
+    alert(`Email: ${data.email}\n Senha: ${data.senha}`);
+  };
+
+return (
+  <div
+    className="h-screen flex items-center justify-end p-2
+               bg-[url('/bg.png')] bg-no-repeat bg-[#131D27] bg-left"
+  >
+    <div className="w-full max-w-md h-screen flex items-center">
+      <LoginForm onSubmitForm={handleFormSubmit} />
     </div>
-  );
-}
+  </div>
+);
+
+};
+
+export default App;

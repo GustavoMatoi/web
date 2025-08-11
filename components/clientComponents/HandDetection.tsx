@@ -1,5 +1,6 @@
 "use client"; // Diretiva do Next.js para indicar que este é um componente client-side
 import { useEffect, useRef, useState } from "react"; // Importa hooks do React para efeitos, referências e estado
+import { Arquivo } from "../../types/types";
 
 // Tipos para as bibliotecas externas
 interface Point { // Interface que define um ponto 2D
@@ -57,7 +58,7 @@ interface FingertipPoints { // Interface para mapear índices de pontas dos dedo
 
 type ProximityPair = [number, number]; // Tipo que representa um par de índices para comparação de proximidade
 
-const HandDetection: React.FC = () => { // Componente funcional React para detecção de gestos de mão
+const HandDetection = ({arquivo}: {arquivo: string}) => { // Componente funcional React para detecção de gestos de mão
   const videoRef = useRef<HTMLVideoElement>(null); // Referência para o elemento de vídeo
   const canvasRef = useRef<HTMLCanvasElement>(null); // Referência para o elemento canvas
   const [isLoading, setIsLoading] = useState<boolean>(true); // Estado para controlar se está carregando
@@ -306,6 +307,7 @@ const HandDetection: React.FC = () => { // Componente funcional React para detec
           if (!isGrabbingState && paresProximos >= 1) { // Se não estava pegando e há pelo menos 1 par próximo
             isGrabbingState = true; // Marca como pegando
             setIsGrabbing(true); // Atualiza estado React
+            alert(`Arquivo detectado para transferência: ${arquivo}`)
             console.log("🖐️ Gesto final: pegar (iniciado)"); // Log do gesto
           } else if (isGrabbingState && paresProximos === 0) { // Se estava pegando e não há pares próximos
             isGrabbingState = false; // Marca como não pegando
