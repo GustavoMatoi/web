@@ -58,7 +58,7 @@ interface FingertipPoints { // Interface para mapear índices de pontas dos dedo
 
 type ProximityPair = [number, number]; // Tipo que representa um par de índices para comparação de proximidade
 
-const HandDetection = ({arquivo}: {arquivo: string}) => { // Componente funcional React para detecção de gestos de mão
+const HandDetection = ({arquivo, transferirArquivo}: {arquivo: string, transferirArquivo: () => void }) => { // Componente funcional React para detecção de gestos de mão
   const videoRef = useRef<HTMLVideoElement>(null); // Referência para o elemento de vídeo
   const canvasRef = useRef<HTMLCanvasElement>(null); // Referência para o elemento canvas
   const [isLoading, setIsLoading] = useState<boolean>(true); // Estado para controlar se está carregando
@@ -311,6 +311,7 @@ const HandDetection = ({arquivo}: {arquivo: string}) => { // Componente funciona
             console.log("🖐️ Gesto final: pegar (iniciado)"); // Log do gesto
           } else if (isGrabbingState && paresProximos === 0) { // Se estava pegando e não há pares próximos
             isGrabbingState = false; // Marca como não pegando
+            transferirArquivo()
             setIsGrabbing(false); // Atualiza estado React
             console.log("🙌 Gesto final: soltar (liberado)"); // Log do gesto
           }

@@ -104,37 +104,7 @@ export default function FileManager() {
     <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
       <h1>Gerenciador de Arquivos</h1>
 
-      <div
-        style={{
-          marginBottom: "30px",
-          padding: "20px",
-          border: "1px solid #ccc",
-          borderRadius: "5px",
-        }}
-      >
-        <h2>Upload de Arquivo</h2>
-        <form onSubmit={handleUpload}>
-          <input
-            type="file"
-            onChange={handleFileChange}
-            disabled={uploading}
-            style={{ marginRight: "10px" }}
-          />
-          <button
-            type="submit"
-            disabled={!selectedFile || uploading}
-            style={{
-              padding: "5px 15px",
-              backgroundColor: "#0070f3",
-              color: "white",
-              border: "none",
-              borderRadius: "3px",
-            }}
-          >
-            {uploading ? "Enviando..." : "Upload"}
-          </button>
-        </form>
-      </div>
+    
 
       {/* Lista de Arquivos */}
       <div>
